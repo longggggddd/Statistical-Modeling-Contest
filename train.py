@@ -20,13 +20,13 @@ plt.rcParams['axes.unicode_minus'] = False
 
 np.random.seed(10)
 
-data = pd.read_excel('数据/SOFT填充.xlsx')
-data_temp = pd.read_excel('数据/LR填充.xlsx')
+data = pd.read_excel('data/bistandard+soft_fill.xlsx')
+
 
 data_x = data.iloc[:, :-1]
 feat_importance = data_x.columns
-# data_y = data.iloc[:, -1]  # ！！！
-data_y = data_temp.iloc[:, -1]
+data_y = data.iloc[:, -1]  # ！！！
+
 
 train_x, test_x, train_y, test_y = train_test_split(data_x, data_y, test_size=0.2, shuffle=True, random_state=10)
 

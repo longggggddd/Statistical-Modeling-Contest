@@ -4,7 +4,7 @@ import pandas as pd
 import tqdm
 from def_fun import kfold_stats_feature, mean_score
 
-data = pd.read_csv('数据/original_data.csv', encoding='ANSI')
+data = pd.read_csv('data/original_data.csv', encoding='ANSI')
 pd.set_option('display.max_columns', None)
 
 # 初步处理特征
@@ -39,4 +39,4 @@ for unit in tqdm.tqdm(data_target_encode['房客评价']):
     else:
         lst.append(np.nan)
 data_target_encode['房客评价'] = lst
-data_target_encode.to_excel('1.xlsx')
+data_target_encode.to_excel('mid_data.xlsx')

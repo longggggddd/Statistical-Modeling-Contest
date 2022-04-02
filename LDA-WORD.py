@@ -63,8 +63,8 @@ def lda_train(weight, vectorizer, N_TOPICS, n_top_words):
 
 
 def main(num_of_homestay, num_of_topic, num_of_topic_words):
-    data_good = pd.read_csv('数据/original_data.csv', encoding='ANSI')
-    with open('数据/stopwords.txt', 'r', encoding="utf-8") as f:
+    data_good = pd.read_csv('data/original_data.csv', encoding='ANSI')
+    with open('data/stopwords.txt', 'r', encoding="utf-8") as f:
         lines = f.readlines()
         f.close()
     stopwords = []

@@ -12,9 +12,12 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 # print('keras版本：', keras.__version__)
 # print('torch版本：', torch.__version__)
 
-data = np.random.randint(10, 100, (4, 4))
-print(data)
+# data = np.random.randint(10, 100, (4, 4))
+# print(data)
+#
+# scl = StandardScaler()
+# data = scl.fit_transform(data)
+# print(data)
+# print(StandardScaler.__name__)
 
-scl = StandardScaler()
-data = scl.fit_transform(data)
-print(data)
+

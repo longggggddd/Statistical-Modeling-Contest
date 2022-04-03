@@ -61,7 +61,7 @@ def plot_history(history):
         "loss": loss,
         "val-rmse": val_0_rmse,
         'val-mae': val_0_mae
-    })
+    })  # 添加注释
     sns.lineplot(data=plot_data)
     plt.title('Validation Situation')
     plt.xlabel('epoch')

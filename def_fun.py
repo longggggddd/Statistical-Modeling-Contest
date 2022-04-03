@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-
-
 def kfold_stats_feature(train, feats, y, k, seed):
     '''
     Target-Encode
@@ -50,6 +48,7 @@ def mean_score(lstsentence):
     result = a(lstsentence)
     return float(result[0]['score'])
 
+
 def plot_history(history):
     loss = history['loss']
     lr = history['lr']
@@ -70,7 +69,3 @@ def plot_history(history):
     plt.legend()
     plt.savefig('picture/loss.png')
     plt.show()
-
-
-
-

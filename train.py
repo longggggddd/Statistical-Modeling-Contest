@@ -22,11 +22,9 @@ np.random.seed(10)
 
 data = pd.read_excel('data/bistandard+soft_fill.xlsx')
 
-
 data_x = data.iloc[:, :-1]
 feat_importance = data_x.columns
 data_y = data.iloc[:, -1]  # ！！！
-
 
 train_x, test_x, train_y, test_y = train_test_split(data_x, data_y, test_size=0.2, shuffle=True, random_state=10)
 
@@ -83,7 +81,7 @@ clf = TabNetRegressor(
 clf.fit(
     train_x, train_y,
     batch_size=256,
-    max_epochs=256,
+    max_epochs=128,
     eval_set=[(valid_x, valid_y)],
     eval_metric=['rmse', 'mae'],
     patience=0
@@ -135,7 +133,6 @@ plot_data = pd.DataFrame(data={
     'importance': importance
 })
 plot_data = plot_data.set_index(keys='feat_name', drop=True)
-print(plot_data)
 plot_data.plot(kind='bar')
 plt.show()
 # 下面计算特征重要性（shap使用）

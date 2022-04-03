@@ -49,23 +49,35 @@ def mean_score(lstsentence):
     return float(result[0]['score'])
 
 
-def plot_history(history):
+def plot_history_loss(history):
     loss = history['loss']
-    lr = history['lr']
-    val_0_rmse = history['val_0_rmse']
-    val_0_mae = history['val_0_mae']
-    x = range(1, len(loss) + 1)
     plt.figure(figsize=(12, 5))
     plot_data = pd.DataFrame(data={
-        # "lr": x,
         "loss": loss,
-        "val-rmse": val_0_rmse,
-        'val-mae': val_0_mae
-    })  # 添加注释
+
+    })
     sns.lineplot(data=plot_data)
-    plt.title('Validation Situation')
+    plt.title('Loss in Validation')
     plt.xlabel('epoch')
     plt.ylabel('value')
     plt.legend()
     plt.savefig('picture/loss.png')
+    plt.show()
+
+
+def plot_history_mae_mse(history):
+    val_0_rmse = history['val_0_rmse']
+    val_0_mae = history['val_0_mae']
+    plt.figure(figsize=(12, 5))
+    plot_data = pd.DataFrame(data={
+
+        "val-rmse": val_0_rmse,
+        'val-mae': val_0_mae
+    })  # 添加注释
+    sns.lineplot(data=plot_data)
+    plt.title('MSE and MAE in Validation')
+    plt.xlabel('epoch')
+    plt.ylabel('value')
+    plt.legend()
+    plt.savefig('picture/mae_mse.png')
     plt.show()

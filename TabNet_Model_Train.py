@@ -7,7 +7,7 @@ from pytorch_tabnet.tab_model import TabNetRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import seaborn as sns
-from def_fun import plot_history
+from def_fun import plot_history_loss, plot_history_mae_mse
 import shap
 
 plt.rcParams['font.sans-serif'] = ['SimHei']
@@ -60,19 +60,9 @@ print('RMSE:', np.sqrt(mse))
 print('MAE:', mae)
 print('R2:', r2)
 
-plot_history(clf.history)
-plot_data = pd.DataFrame(data={
-    # "x": x,
-    "true": test_y,
-    "pred": pred_y
-})
+plot_history_loss(clf.history)
+plot_history_mae_mse(clf.history)
 
-plt.style.use('ggplot')
-plt.figure()
-sns.lineplot(data=plot_data)
-plt.legend()
-plt.savefig('picture/true_pred.png')
-plt.show()
 
 plot_data = pd.DataFrame(data={
     # "x": x,
@@ -94,4 +84,3 @@ plot_data = pd.DataFrame(data={
 plot_data = plot_data.set_index(keys='feat_name', drop=True)
 plot_data.plot(kind='bar')
 plt.show()
-

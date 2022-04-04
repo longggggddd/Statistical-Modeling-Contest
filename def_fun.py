@@ -133,7 +133,7 @@ def tan(address):
     return new
 
 
-def paint(n, text):
+def paint(n, text, name='describe'):
     # mask = np.array(Image.open("heart.jpg"))
 
     text = tan(text)
@@ -147,7 +147,5 @@ def paint(n, text):
     # wordcloud.to_file(r"C:/Users/123/Desktop/Python学习笔记/作业文档/词云结果图/词云结果图.png")  # 做好的图片放到一个新的文件之中
     plt.imshow(wordcloud)  # 将图片文件显示在坐标图之上
     plt.axis("off")  # 无坐标轴
+    plt.savefig(f'picture/{name}.png')
     plt.show()  # 显示图片
-
-
-

@@ -1,4 +1,5 @@
 # -*- coding:utf-8-*-
+import numpy as np
 from transformers import BertTokenizer, BertModel, pipeline, BertConfig, BertForSequenceClassification
 from transformers import AdamW
 import torch
@@ -7,6 +8,8 @@ from transformers import logging
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import jieba_fast as jieba
+from wordcloud import WordCloud
 
 
 def kfold_stats_feature(train, feats, y, k, seed):
@@ -81,3 +84,70 @@ def plot_history_mae_mse(history):
     plt.legend()
     plt.savefig('picture/mae_mse.png')
     plt.show()
+
+
+def term_f(n, text):
+    with open('data/stopwords.txt', 'r', encoding="utf-8") as f:
+        lines = f.readlines()
+        f.close()
+    stopwords = []
+    for l in lines:
+        stopwords.append(l.strip())
+
+    list_words = jieba.lcut(text)
+    list_words1 = []
+    for i in list_words:
+        if i != " " and i not in stopwords:
+            list_words1.append(i)
+
+    # print(list_words1)
+    dict1 = {}
+    for ii in list_words1:
+        dict1[ii] = list_words1.count(ii)
+    for key in list(dict1):  # 注意字典在遍历时候不可以修改里面的内容！！！遍历修改需要转换成列表！！
+        if len(key) == 1:
+            del dict1[key]
+    s = list(set(list(dict1.values())))
+    s.sort()
+    s.reverse()
+    va = s[0:]
+    ln = []
+    for ii in va:
+        for i in list(dict1.items()):
+            if ii == i[1]:
+                ln.append(i)
+
+    print("本文出现词语频数如下：")
+    for n in ln[:n]:
+        print(("{:<5} {:>10}次".format(n[0], n[1])))
+
+
+def tan(address):
+    words = jieba.lcut(address)
+    for i in words:
+        if len(i) == 1:
+            words.remove(i)  # 字符串长度为1的不予以输出
+    stopwords = open('data/stopwords.txt', encoding='utf-8').read().split()
+    text_list = [item for item in words if item != ' ' and item not in stopwords]
+    new = " ".join(text_list)
+    return new
+
+
+def paint(n, text):
+    # mask = np.array(Image.open("heart.jpg"))
+
+    text = tan(text)
+    wordcloud = WordCloud(background_color="white", width=750, height=630, max_words=n,
+                          # mask=mask,
+                          # 做词云处理的时候mask后边接的是处理成数组之后的图片
+                          contour_width=3, contour_color="green",
+                          font_path="data/微软雅黑.ttf"
+                          ).generate(
+        text)  # 必须是字符串 中间用空白间隔的字符串
+    # wordcloud.to_file(r"C:/Users/123/Desktop/Python学习笔记/作业文档/词云结果图/词云结果图.png")  # 做好的图片放到一个新的文件之中
+    plt.imshow(wordcloud)  # 将图片文件显示在坐标图之上
+    plt.axis("off")  # 无坐标轴
+    plt.show()  # 显示图片
+
+
+

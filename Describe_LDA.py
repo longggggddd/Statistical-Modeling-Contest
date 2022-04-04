@@ -70,7 +70,7 @@ def main(num_of_homestay, num_of_topic, num_of_topic_words):
     stopwords = []
     for l in lines:
         stopwords.append(l.strip())
-    original = data_good['描述'][:num_of_homestay]
+    original = data_good['房客评价'].dropna(axis=0).sample(frac=num_of_homestay)
     corpus = [preprocess(i, stopwords) for i in original]
     # corpus = [' '.join(corpus)]
     # print(corpus)
@@ -82,7 +82,7 @@ def main(num_of_homestay, num_of_topic, num_of_topic_words):
 
 
 if __name__ == '__main__':
-    num_of_homestay = 20  # 前N个民宿，不能用全部，太多了，我试了最多50个最好
+    num_of_homestay = 0.2  # 前N个民宿，不能用全部，太多了，我试了最多50个最好
     N_TOPICS = 10  # 提取N个主题
     N_TOP_WORDS = 10  # 每个主题提取N个词
     main(num_of_homestay, N_TOPICS, N_TOP_WORDS)

@@ -33,6 +33,17 @@ print(train_x.shape)
 print(valid_x.shape)
 print(test_x.shape)
 
+# tabnet_params = {"cat_idxs":cat_idxs,
+#                  "cat_dims":cat_dims,
+#                  "cat_emb_dim":1,
+#                  "optimizer_fn":torch.optim.Adam,
+#                  "optimizer_params":dict(lr=2e-2),
+#                  "scheduler_params":{"step_size":50, # how to use learning rate scheduler
+#                                  "gamma":0.9},
+#                  "scheduler_fn":torch.optim.lr_scheduler.StepLR,
+#                  "mask_type":'entmax' # "sparsemax"
+#                 }
+
 clf = TabNetRegressor(
     verbose=True,
     seed=10,
@@ -40,12 +51,13 @@ clf = TabNetRegressor(
     optimizer_params=dict(lr=2e-2),
     scheduler_params={"step_size": 10,  # how to use learning rate scheduler
                       "gamma": 0.9},
-    scheduler_fn=torch.optim.lr_scheduler.StepLR
+    scheduler_fn=torch.optim.lr_scheduler.StepLR,
+    # mask_type='entmax'  # "sparsemax"
 )
 clf.fit(
     train_x, train_y,
     batch_size=256,
-    max_epochs=200,
+    max_epochs=2,
     eval_set=[(valid_x, valid_y)],
     eval_metric=['mse', 'mae'],
     patience=0
@@ -59,7 +71,15 @@ mse = mean_squared_error(test_y, pred_y)
 mae = mean_absolute_error(test_y, pred_y)
 r2 = r2_score(test_y, pred_y)
 importance = clf.feature_importances_
+print(clf.network)
 
+# 局部重要性
+explain_matrix, masks = clf.explain(test_x)
+fig, axs = plt.subplots(1, 3, figsize=(20, 20))
+
+for i in range(3):  # 代表展示前3个MASK
+    axs[i].imshow(masks[i][:50])  # 50 代表前50个样本
+    axs[i].set_title(f"mask {i}")
 
 print('MSE:', mse)
 print('MAE:', mae)
@@ -67,7 +87,6 @@ print('R2:', r2)
 
 plot_history_loss(clf.history)
 plot_history_mae_mse(clf.history)
-
 
 plot_data = pd.DataFrame(data={
     # "x": x,

@@ -3,6 +3,8 @@
 # import tensorflow
 # import keras
 # import torch
+import sklearn
+print(sklearn.__version__)
 import numpy as np
 
 from sklearn.preprocessing import MinMaxScaler, StandardScaler

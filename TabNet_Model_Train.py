@@ -29,6 +29,10 @@ train_y = np.array(train_y).reshape(-1, 1)
 test_y = np.array(test_y).reshape(-1, 1)
 valid_y = np.array(valid_y).reshape(-1, 1)
 
+print(train_x.shape)
+print(valid_x.shape)
+print(test_x.shape)
+
 clf = TabNetRegressor(
     verbose=True,
     seed=10,
@@ -43,7 +47,7 @@ clf.fit(
     batch_size=256,
     max_epochs=200,
     eval_set=[(valid_x, valid_y)],
-    eval_metric=['rmse', 'mae'],
+    eval_metric=['mse', 'mae'],
     patience=0
 )
 
@@ -56,7 +60,8 @@ mae = mean_absolute_error(test_y, pred_y)
 r2 = r2_score(test_y, pred_y)
 importance = clf.feature_importances_
 
-print('RMSE:', np.sqrt(mse))
+
+print('MSE:', mse)
 print('MAE:', mae)
 print('R2:', r2)
 

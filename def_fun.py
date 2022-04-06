@@ -69,7 +69,7 @@ def plot_history_loss(history):
 
 
 def plot_history_mae_mse(history):
-    val_0_rmse = history['val_0_rmse']
+    val_0_rmse = history['val_0_mse']
     val_0_mae = history['val_0_mae']
     plt.figure(figsize=(12, 5))
     plot_data = pd.DataFrame(data={

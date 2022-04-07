@@ -4,6 +4,7 @@ import pandas as pd
 import torch
 from matplotlib import pyplot as plt
 from pytorch_tabnet.tab_model import TabNetRegressor
+from pytorch_tabnet.pretraining import TabNetPretrainer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import seaborn as sns
@@ -44,24 +45,52 @@ print(test_x.shape)
 #                  "mask_type":'entmax' # "sparsemax"
 #                 }
 
-clf = TabNetRegressor(
-    verbose=True,
-    seed=10,
-    optimizer_fn=torch.optim.Adam,
-    optimizer_params=dict(lr=2e-2),
-    scheduler_params={"step_size": 10,  # how to use learning rate scheduler
-                      "gamma": 0.9},
-    scheduler_fn=torch.optim.lr_scheduler.StepLR,
-    # mask_type='entmax'  # "sparsemax"
-)
+# pre_clf = TabNetPretrainer(
+#     verbose=True,
+#     seed=10,
+#     optimizer_fn=torch.optim.Adam,
+#     optimizer_params=dict(lr=2e-2),
+#     scheduler_params={"step_size": 10,  # how to use learning rate scheduler
+#                       "gamma": 0.9},
+#     scheduler_fn=torch.optim.lr_scheduler.StepLR,
+#     # n_shared_decoder=1,  # nb shared glu for decoding
+#     # n_indep_decoder=1,  # nb independent glu for decoding
+#     # mask_type='entmax'  # "sparsemax"
+# )
+# pre_clf.fit(
+#     X_train=train_x,
+#     eval_set=[valid_x],
+#     max_epochs=200,
+#     batch_size=256,
+#     num_workers=0,
+#     drop_last=False,
+#     pretraining_ratio=0.8,
+#     patience=0
+# )
+#
+# # Make reconstruction from a dataset
+# reconstructed_X, embedded_X = pre_clf.predict(valid_x)
+# assert (reconstructed_X.shape == embedded_X.shape)
+# unsupervised_explain_matrix, unsupervised_masks = pre_clf.explain(valid_x)
+# pre_clf.save_model('pretrain/test_pretrain')
+loaded_pretrain = TabNetPretrainer()
+loaded_pretrain.load_model('pretrain/test_pretrain.zip')
+
+clf = TabNetRegressor(optimizer_fn=torch.optim.Adam,
+                      optimizer_params=dict(lr=2e-2),
+                      scheduler_params={"step_size": 10,  # how to use learning rate scheduler
+                                        "gamma": 0.9},
+                      scheduler_fn=torch.optim.lr_scheduler.StepLR,
+                      mask_type='sparsemax'  # This will be overwritten if using pretrain model
+                      )
 clf.fit(
     train_x, train_y,
     batch_size=256,
     max_epochs=200,
     eval_set=[(valid_x, valid_y)],
     eval_metric=['mse', 'mae'],
-    patience=0
-)
+    patience=0,
+    from_unsupervised=loaded_pretrain)
 
 pred_y = clf.predict(test_x)
 pred_y = pred_y.reshape(1, -1)[0]
@@ -85,8 +114,8 @@ print('MSE:', mse)
 print('MAE:', mae)
 print('R2:', r2)
 
-plot_history_loss(clf.history, 'supervise')
-plot_history_mae_mse(clf.history, 'supervise')
+plot_history_loss(clf.history, 'pre')
+plot_history_mae_mse(clf.history, 'pre')
 
 plot_data = pd.DataFrame(data={
     # "x": x,
@@ -98,7 +127,7 @@ plt.style.use('ggplot')
 plt.figure()
 sns.lineplot(data=plot_data)
 plt.legend()
-plt.savefig('picture/supervise-true_pred.png')
+plt.savefig('picture/pre_true_pred.png')
 plt.show()
 
 plot_data = pd.DataFrame(data={
@@ -107,5 +136,5 @@ plot_data = pd.DataFrame(data={
 })
 plot_data = plot_data.set_index(keys='feat_name', drop=True)
 plot_data.plot(kind='bar')
-plt.savefig('picture/supervise-importance.png')
+plt.savefig('picture/pre-importance.png')
 plt.show()

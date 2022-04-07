@@ -52,7 +52,7 @@ def mean_score(lstsentence):
     return float(result[0]['score'])
 
 
-def plot_history_loss(history):
+def plot_history_loss(history,name):
     loss = history['loss']
     plt.figure(figsize=(12, 5))
     plot_data = pd.DataFrame(data={
@@ -64,11 +64,11 @@ def plot_history_loss(history):
     plt.xlabel('epoch')
     plt.ylabel('value')
     plt.legend()
-    plt.savefig('picture/loss.png')
+    plt.savefig(f'picture/{name}-loss.png')
     plt.show()
 
 
-def plot_history_mae_mse(history):
+def plot_history_mae_mse(history, name='pre'):
     val_0_rmse = history['val_0_mse']
     val_0_mae = history['val_0_mae']
     plt.figure(figsize=(12, 5))
@@ -82,7 +82,7 @@ def plot_history_mae_mse(history):
     plt.xlabel('epoch')
     plt.ylabel('value')
     plt.legend()
-    plt.savefig('picture/mae_mse.png')
+    plt.savefig(f'picture/{name}-mae-mse.png')
     plt.show()
 
 

@@ -73,9 +73,9 @@ print(test_x.shape)
 # assert (reconstructed_X.shape == embedded_X.shape)
 # unsupervised_explain_matrix, unsupervised_masks = pre_clf.explain(valid_x)
 # pre_clf.save_model('pretrain/test_pretrain')
+
 loaded_pretrain = TabNetPretrainer()
 loaded_pretrain.load_model('pretrain/test_pretrain.zip')
-
 clf = TabNetRegressor(optimizer_fn=torch.optim.Adam,
                       optimizer_params=dict(lr=2e-2),
                       scheduler_params={"step_size": 10,  # how to use learning rate scheduler
@@ -138,3 +138,7 @@ plot_data = plot_data.set_index(keys='feat_name', drop=True)
 plot_data.plot(kind='bar')
 plt.savefig('picture/pre-importance.png')
 plt.show()
+
+
+def sesuper():
+    return r2, clf.history['loss']

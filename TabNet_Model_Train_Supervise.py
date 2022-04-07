@@ -49,6 +49,9 @@ clf = TabNetRegressor(
     seed=10,
     optimizer_fn=torch.optim.Adam,
     optimizer_params=dict(lr=2e-2),
+    n_a=8,
+    n_d=8,
+    n_steps=3,
     scheduler_params={"step_size": 10,  # how to use learning rate scheduler
                       "gamma": 0.9},
     scheduler_fn=torch.optim.lr_scheduler.StepLR,
@@ -109,3 +112,7 @@ plot_data = plot_data.set_index(keys='feat_name', drop=True)
 plot_data.plot(kind='bar')
 plt.savefig('picture/supervise-importance.png')
 plt.show()
+
+
+def super():
+    return r2, clf.history['loss']

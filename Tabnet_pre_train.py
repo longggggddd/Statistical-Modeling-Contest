@@ -88,7 +88,7 @@ clf.fit(
     batch_size=256,
     max_epochs=200,
     eval_set=[(valid_x, valid_y)],
-    eval_metric=['mse', 'mae'],
+    eval_metric=['rmse', 'mae'],
     patience=0,
     from_unsupervised=loaded_pretrain)
 
@@ -100,7 +100,7 @@ mse = mean_squared_error(test_y, pred_y)
 mae = mean_absolute_error(test_y, pred_y)
 r2 = r2_score(test_y, pred_y)
 importance = clf.feature_importances_
-print(clf.network)
+# print(clf.network)
 
 # 局部重要性
 explain_matrix, masks = clf.explain(test_x)
@@ -119,8 +119,8 @@ plot_history_mae_mse(clf.history, 'pre')
 
 plot_data = pd.DataFrame(data={
     # "x": x,
-    "true": test_y,
-    "pred": pred_y
+    "True": test_y,
+    "Pred": pred_y
 })
 
 plt.style.use('ggplot')
@@ -132,7 +132,7 @@ plt.show()
 
 plot_data = pd.DataFrame(data={
     'feat_name': feat_importance,
-    'importance': importance
+    'Importance': importance
 })
 plot_data = plot_data.set_index(keys='feat_name', drop=True)
 plot_data.plot(kind='bar')

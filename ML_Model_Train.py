@@ -55,6 +55,7 @@ for i, clf in enumerate(clf_list):
 plot_data = pd.DataFrame(data={
     '模型': clf_name2,
     'MSE': mse_list,
+    'RMSE': np.sqrt(mse_list),
     'MAE': mae_list,
 })
 plt.style.use('ggplot')

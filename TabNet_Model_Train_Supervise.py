@@ -62,7 +62,7 @@ clf.fit(
     batch_size=256,
     max_epochs=200,
     eval_set=[(valid_x, valid_y)],
-    eval_metric=['mse', 'mae'],
+    eval_metric=['rmse', 'mae'],
     patience=0
 )
 
@@ -104,14 +104,25 @@ plt.legend()
 plt.savefig('picture/supervise-true_pred.png')
 plt.show()
 
+zip_importance_feat = zip(feat_importance, importance)
+dict_importance_feat = dict(zip_importance_feat)
+dict_importance_feat = dict(sorted(dict_importance_feat.items(), key=lambda x: x[1]))
+feat_importance= dict_importance_feat.keys()
+importance=dict_importance_feat.values()
+
 plot_data = pd.DataFrame(data={
     'feat_name': feat_importance,
     'importance': importance
 })
 plot_data = plot_data.set_index(keys='feat_name', drop=True)
-plot_data.plot(kind='bar')
+plot_data.plot(kind='barh')
 plt.savefig('picture/supervise-importance.png')
 plt.show()
+
+
+# plt.figure(figsize=(8, 8))
+# plt.style.use('ggplot')
+# plt.barh
 
 
 def super():

@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import jieba_fast as jieba
 from wordcloud import WordCloud
+plt.style.use('ggplot')
 
 
 def kfold_stats_feature(train, feats, y, k, seed):
@@ -56,31 +57,31 @@ def plot_history_loss(history,name):
     loss = history['loss']
     plt.figure(figsize=(12, 5))
     plot_data = pd.DataFrame(data={
-        "loss": loss,
+        "Loss": loss,
 
     })
     sns.lineplot(data=plot_data)
     plt.title('Loss in Validation')
-    plt.xlabel('epoch')
-    plt.ylabel('value')
+    plt.xlabel('Epoch')
+    plt.ylabel('Value')
     plt.legend()
     plt.savefig(f'picture/{name}-loss.png')
     plt.show()
 
 
 def plot_history_mae_mse(history, name='pre'):
-    val_0_rmse = history['val_0_mse']
+    val_0_rmse = history['val_0_rmse']
     val_0_mae = history['val_0_mae']
     plt.figure(figsize=(12, 5))
     plot_data = pd.DataFrame(data={
 
-        "val-rmse": val_0_rmse,
-        'val-mae': val_0_mae
+        "RMSE": val_0_rmse,
+        'MAE': val_0_mae
     })  # 添加注释
     sns.lineplot(data=plot_data)
-    plt.title('MSE and MAE in Validation')
-    plt.xlabel('epoch')
-    plt.ylabel('value')
+    plt.title('RMSE and MAE in Validation')
+    plt.xlabel('Epoch')
+    plt.ylabel('Value')
     plt.legend()
     plt.savefig(f'picture/{name}-mae-mse.png')
     plt.show()

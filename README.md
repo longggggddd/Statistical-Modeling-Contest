@@ -1,3 +1,5 @@
 # Statistical-Modeling-Contest
 Statistical-Modeling-Contest
-个人项目
+@ 赛区：天津赛区
+@ 组别：研究生组
+@ 赛题名称：基于信任机制-TabNet的京津冀地区共享民宿预定量影响因素实证研究

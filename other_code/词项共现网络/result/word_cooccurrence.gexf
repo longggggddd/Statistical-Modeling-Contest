@@ -1,0 +1,661 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-04-10">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="束缚" label="束缚" />
+      <node id="平生" label="平生" />
+      <node id="玑崽" label="玑崽" />
+      <node id="小妖" label="小妖" />
+      <node id="意思" label="意思" />
+      <node id="故乡" label="故乡" />
+      <node id="好帅" label="好帅" />
+      <node id="蝴蝶" label="蝴蝶" />
+      <node id="孩子" label="孩子" />
+      <node id="衣服" label="衣服" />
+      <node id="翅膀" label="翅膀" />
+      <node id="人间" label="人间" />
+      <node id="肉身" label="肉身" />
+      <node id="故人" label="故人" />
+      <node id="全剧" label="全剧" />
+      <node id="记忆" label="记忆" />
+      <node id="表情" label="表情" />
+      <node id="人家" label="人家" />
+      <node id="眼神" label="眼神" />
+      <node id="烈士" label="烈士" />
+      <node id="特能" label="特能" />
+      <node id="场面" label="场面" />
+      <node id="骨灰盒" label="骨灰盒" />
+      <node id="魔头" label="魔头" />
+      <node id="父亲" label="父亲" />
+      <node id="怕鬼" label="怕鬼" />
+      <node id="动作" label="动作" />
+      <node id="狗头" label="狗头" />
+      <node id="视角" label="视角" />
+      <node id="天魔" label="天魔" />
+      <node id="情劫" label="情劫" />
+      <node id="身体" label="身体" />
+      <node id="镜头" label="镜头" />
+      <node id="故事" label="故事" />
+      <node id="骸骨" label="骸骨" />
+      <node id="社交" label="社交" />
+      <node id="工作" label="工作" />
+      <node id="帽子" label="帽子" />
+      <node id="颜艺" label="颜艺" />
+      <node id="飞机" label="飞机" />
+      <node id="崽子" label="崽子" />
+      <node id="专业" label="专业" />
+      <node id="名字" label="名字" />
+      <node id="小鸟" label="小鸟" />
+      <node id="骨头" label="骨头" />
+      <node id="朋友" label="朋友" />
+      <node id="人族" label="人族" />
+      <node id="人们" label="人们" />
+      <node id="世外桃源" label="世外桃源" />
+      <node id="梨花" label="梨花" />
+      <node id="地方" label="地方" />
+      <node id="语气" label="语气" />
+      <node id="族人" label="族人" />
+      <node id="亲人" label="亲人" />
+      <node id="手熟" label="手熟" />
+      <node id="精准" label="精准" />
+      <node id="老师" label="老师" />
+      <node id="礼貌" label="礼貌" />
+      <node id="格局" label="格局" />
+      <node id="族长" label="族长" />
+      <node id="妖族" label="妖族" />
+      <node id="鸡崽" label="鸡崽" />
+      <node id="傀儡" label="傀儡" />
+      <node id="大刀" label="大刀" />
+      <node id="人面" label="人面" />
+      <node id="巫族" label="巫族" />
+      <node id="无辜" label="无辜" />
+      <node id="丹离" label="丹离" />
+      <node id="设计" label="设计" />
+      <node id="天地" label="天地" />
+      <node id="责任" label="责任" />
+      <node id="少女" label="少女" />
+      <node id="思念" label="思念" />
+      <node id="干嘛" label="干嘛" />
+      <node id="救命" label="救命" />
+      <node id="头发" label="头发" />
+      <node id="转场" label="转场" />
+      <node id="姐姐" label="姐姐" />
+      <node id="灵渊" label="灵渊" />
+      <node id="硬币" label="硬币" />
+      <node id="前辈" label="前辈" />
+      <node id="角度" label="角度" />
+      <node id="细节" label="细节" />
+      <node id="镜花水月" label="镜花水月" />
+      <node id="医院" label="医院" />
+      <node id="家人" label="家人" />
+      <node id="兄弟" label="兄弟" />
+      <node id="祭品" label="祭品" />
+      <node id="原文" label="原文" />
+      <node id="新冠" label="新冠" />
+      <node id="中心" label="中心" />
+      <node id="复活" label="复活" />
+      <node id="时间" label="时间" />
+      <node id="暖气" label="暖气" />
+      <node id="重点" label="重点" />
+      <node id="心脏" label="心脏" />
+      <node id="六欲" label="六欲" />
+      <node id="口音" label="口音" />
+      <node id="老头" label="老头" />
+      <node id="妈呀" label="妈呀" />
+      <node id="大姐" label="大姐" />
+      <node id="离谱" label="离谱" />
+      <node id="太帅" label="太帅" />
+      <node id="过分" label="过分" />
+      <node id="婆婆" label="婆婆" />
+      <node id="秋裤" label="秋裤" />
+      <node id="洗脑" label="洗脑" />
+      <node id="片尾曲" label="片尾曲" />
+      <node id="家暴" label="家暴" />
+      <node id="现场" label="现场" />
+      <node id="戒指" label="戒指" />
+      <node id="弟弟" label="弟弟" />
+      <node id="好歹" label="好歹" />
+      <node id="情敌" label="情敌" />
+      <node id="锦鲤" label="锦鲤" />
+      <node id="光头" label="光头" />
+      <node id="制作组" label="制作组" />
+      <node id="精彩" label="精彩" />
+      <node id="空手" label="空手" />
+      <node id="科学" label="科学" />
+      <node id="寡妇村" label="寡妇村" />
+      <node id="精分" label="精分" />
+      <node id="条形码" label="条形码" />
+      <node id="剧组" label="剧组" />
+      <node id="原皮" label="原皮" />
+      <node id="小孩" label="小孩" />
+      <node id="小叽" label="小叽" />
+      <node id="祭文" label="祭文" />
+      <node id="眼睛" label="眼睛" />
+      <node id="鸡仔" label="鸡仔" />
+      <node id="出场" label="出场" />
+      <node id="殉情" label="殉情" />
+      <node id="撒花" label="撒花" />
+      <node id="主角" label="主角" />
+      <node id="样子" label="样子" />
+      <node id="标题" label="标题" />
+      <node id="我会" label="我会" />
+      <node id="尸骨" label="尸骨" />
+      <node id="图片" label="图片" />
+      <node id="历史" label="历史" />
+      <node id="实物" label="实物" />
+      <node id="史书" label="史书" />
+      <node id="终身大事" label="终身大事" />
+      <node id="厕所" label="厕所" />
+      <node id="春生" label="春生" />
+      <node id="能力" label="能力" />
+      <node id="外勤" label="外勤" />
+      <node id="异能" label="异能" />
+      <node id="精神" label="精神" />
+      <node id="普通人" label="普通人" />
+      <node id="面具" label="面具" />
+      <node id="刀子" label="刀子" />
+      <node id="太刀" label="太刀" />
+      <node id="入魔" label="入魔" />
+      <node id="泪目" label="泪目" />
+      <node id="投币" label="投币" />
+      <node id="高能" label="高能" />
+      <node id="心梗" label="心梗" />
+      <node id="马桶" label="马桶" />
+      <node id="伏笔" label="伏笔" />
+      <node id="家属" label="家属" />
+      <node id="云烟" label="云烟" />
+      <node id="博士" label="博士" />
+      <node id="事情" label="事情" />
+      <node id="民族" label="民族" />
+      <node id="人类" label="人类" />
+      <node id="官方" label="官方" />
+      <node id="传闻" label="传闻" />
+      <node id="烈火" label="烈火" />
+      <node id="人心" label="人心" />
+      <node id="众生" label="众生" />
+      <node id="魔通" label="魔通" />
+      <node id="配乐" label="配乐" />
+      <node id="手机" label="手机" />
+      <node id="对方" label="对方" />
+      <node id="乾坤" label="乾坤" />
+      <node id="诈尸" label="诈尸" />
+      <node id="火烧" label="火烧" />
+      <node id="霸气" label="霸气" />
+      <node id="问候" label="问候" />
+      <node id="油翁" label="油翁" />
+      <node id="音乐" label="音乐" />
+      <node id="哔哩" label="哔哩" />
+      <node id="电视" label="电视" />
+      <node id="脚步声" label="脚步声" />
+      <node id="世纪" label="世纪" />
+    </nodes>
+    <edges>
+      <edge source="束缚" target="平生" id="0" weight="620.0" />
+      <edge source="束缚" target="玑崽" id="1" weight="1.0" />
+      <edge source="束缚" target="小妖" id="2" weight="1.0" />
+      <edge source="束缚" target="意思" id="3" weight="1.0" />
+      <edge source="平生" target="小妖" id="4" weight="1.0" />
+      <edge source="玑崽" target="故乡" id="5" weight="1.0" />
+      <edge source="玑崽" target="好帅" id="6" weight="4.0" />
+      <edge source="玑崽" target="蝴蝶" id="7" weight="1.0" />
+      <edge source="玑崽" target="孩子" id="8" weight="2.0" />
+      <edge source="玑崽" target="衣服" id="9" weight="1.0" />
+      <edge source="玑崽" target="翅膀" id="10" weight="6.0" />
+      <edge source="玑崽" target="人间" id="11" weight="1.0" />
+      <edge source="玑崽" target="肉身" id="12" weight="3.0" />
+      <edge source="玑崽" target="故人" id="13" weight="1.0" />
+      <edge source="玑崽" target="全剧" id="14" weight="1.0" />
+      <edge source="玑崽" target="记忆" id="15" weight="3.0" />
+      <edge source="玑崽" target="表情" id="16" weight="2.0" />
+      <edge source="玑崽" target="人家" id="17" weight="2.0" />
+      <edge source="玑崽" target="眼神" id="18" weight="1.0" />
+      <edge source="玑崽" target="烈士" id="19" weight="1.0" />
+      <edge source="玑崽" target="特能" id="20" weight="2.0" />
+      <edge source="玑崽" target="场面" id="21" weight="1.0" />
+      <edge source="玑崽" target="骨灰盒" id="22" weight="1.0" />
+      <edge source="玑崽" target="魔头" id="23" weight="2.0" />
+      <edge source="玑崽" target="父亲" id="24" weight="1.0" />
+      <edge source="玑崽" target="怕鬼" id="25" weight="8.0" />
+      <edge source="玑崽" target="动作" id="26" weight="1.0" />
+      <edge source="玑崽" target="狗头" id="27" weight="1.0" />
+      <edge source="玑崽" target="视角" id="28" weight="1.0" />
+      <edge source="玑崽" target="天魔" id="29" weight="1.0" />
+      <edge source="玑崽" target="情劫" id="30" weight="3.0" />
+      <edge source="玑崽" target="身体" id="31" weight="1.0" />
+      <edge source="玑崽" target="镜头" id="32" weight="1.0" />
+      <edge source="玑崽" target="故事" id="33" weight="1.0" />
+      <edge source="玑崽" target="骸骨" id="34" weight="1.0" />
+      <edge source="玑崽" target="社交" id="35" weight="1.0" />
+      <edge source="玑崽" target="工作" id="36" weight="1.0" />
+      <edge source="玑崽" target="帽子" id="37" weight="1.0" />
+      <edge source="玑崽" target="颜艺" id="38" weight="1.0" />
+      <edge source="玑崽" target="飞机" id="39" weight="1.0" />
+      <edge source="玑崽" target="崽子" id="40" weight="9.0" />
+      <edge source="玑崽" target="专业" id="41" weight="1.0" />
+      <edge source="玑崽" target="名字" id="42" weight="2.0" />
+      <edge source="玑崽" target="小鸟" id="43" weight="1.0" />
+      <edge source="玑崽" target="骨头" id="44" weight="1.0" />
+      <edge source="玑崽" target="朋友" id="45" weight="1.0" />
+      <edge source="小妖" target="人间" id="46" weight="1.0" />
+      <edge source="小妖" target="故人" id="47" weight="1.0" />
+      <edge source="意思" target="人族" id="48" weight="1.0" />
+      <edge source="意思" target="蝴蝶" id="49" weight="1.0" />
+      <edge source="意思" target="傀儡" id="50" weight="1.0" />
+      <edge source="意思" target="祭品" id="51" weight="1.0" />
+      <edge source="意思" target="标题" id="52" weight="1.0" />
+      <edge source="意思" target="身体" id="53" weight="1.0" />
+      <edge source="意思" target="小孩" id="54" weight="1.0" />
+      <edge source="故乡" target="人族" id="55" weight="1.0" />
+      <edge source="故乡" target="人们" id="56" weight="1.0" />
+      <edge source="故乡" target="世外桃源" id="57" weight="1.0" />
+      <edge source="故乡" target="梨花" id="58" weight="4.0" />
+      <edge source="故乡" target="地方" id="59" weight="1.0" />
+      <edge source="故乡" target="语气" id="60" weight="1.0" />
+      <edge source="故乡" target="族人" id="61" weight="1.0" />
+      <edge source="故乡" target="亲人" id="62" weight="3.0" />
+      <edge source="好帅" target="救命" id="63" weight="1.0" />
+      <edge source="好帅" target="头发" id="64" weight="2.0" />
+      <edge source="好帅" target="转场" id="65" weight="2.0" />
+      <edge source="好帅" target="姐姐" id="66" weight="9.0" />
+      <edge source="好帅" target="翅膀" id="67" weight="6.0" />
+      <edge source="好帅" target="鸡崽" id="68" weight="1.0" />
+      <edge source="好帅" target="灵渊" id="69" weight="1.0" />
+      <edge source="好帅" target="动作" id="70" weight="1.0" />
+      <edge source="好帅" target="镜头" id="71" weight="3.0" />
+      <edge source="好帅" target="崽子" id="72" weight="1.0" />
+      <edge source="好帅" target="硬币" id="73" weight="2.0" />
+      <edge source="好帅" target="前辈" id="74" weight="1.0" />
+      <edge source="好帅" target="角度" id="75" weight="2.0" />
+      <edge source="蝴蝶" target="人族" id="76" weight="1.0" />
+      <edge source="蝴蝶" target="救命" id="77" weight="1.0" />
+      <edge source="蝴蝶" target="翅膀" id="78" weight="6.0" />
+      <edge source="蝴蝶" target="细节" id="79" weight="1.0" />
+      <edge source="蝴蝶" target="镜花水月" id="80" weight="1.0" />
+      <edge source="蝴蝶" target="医院" id="81" weight="1.0" />
+      <edge source="蝴蝶" target="表情" id="82" weight="1.0" />
+      <edge source="蝴蝶" target="家人" id="83" weight="2.0" />
+      <edge source="蝴蝶" target="兄弟" id="84" weight="1.0" />
+      <edge source="蝴蝶" target="特能" id="85" weight="1.0" />
+      <edge source="蝴蝶" target="地方" id="86" weight="2.0" />
+      <edge source="蝴蝶" target="傀儡" id="87" weight="2.0" />
+      <edge source="蝴蝶" target="祭品" id="88" weight="1.0" />
+      <edge source="蝴蝶" target="原文" id="89" weight="1.0" />
+      <edge source="蝴蝶" target="人面" id="90" weight="1.0" />
+      <edge source="蝴蝶" target="父亲" id="91" weight="4.0" />
+      <edge source="蝴蝶" target="新冠" id="92" weight="8.0" />
+      <edge source="蝴蝶" target="身体" id="93" weight="1.0" />
+      <edge source="蝴蝶" target="中心" id="94" weight="2.0" />
+      <edge source="蝴蝶" target="复活" id="95" weight="1.0" />
+      <edge source="蝴蝶" target="时间" id="96" weight="1.0" />
+      <edge source="孩子" target="人族" id="97" weight="1.0" />
+      <edge source="孩子" target="现场" id="98" weight="1.0" />
+      <edge source="孩子" target="人间" id="99" weight="1.0" />
+      <edge source="孩子" target="记忆" id="100" weight="1.0" />
+      <edge source="孩子" target="人家" id="101" weight="1.0" />
+      <edge source="孩子" target="灵渊" id="102" weight="1.0" />
+      <edge source="孩子" target="父亲" id="103" weight="1.0" />
+      <edge source="孩子" target="狗头" id="104" weight="1.0" />
+      <edge source="孩子" target="视角" id="105" weight="1.0" />
+      <edge source="孩子" target="弟弟" id="106" weight="3.0" />
+      <edge source="孩子" target="巫族" id="107" weight="1.0" />
+      <edge source="孩子" target="好歹" id="108" weight="2.0" />
+      <edge source="孩子" target="设计" id="109" weight="1.0" />
+      <edge source="孩子" target="社交" id="110" weight="1.0" />
+      <edge source="孩子" target="情敌" id="111" weight="4.0" />
+      <edge source="衣服" target="头发" id="112" weight="1.0" />
+      <edge source="衣服" target="翅膀" id="113" weight="1.0" />
+      <edge source="衣服" target="细节" id="114" weight="1.0" />
+      <edge source="衣服" target="人家" id="115" weight="2.0" />
+      <edge source="衣服" target="原皮" id="116" weight="2.0" />
+      <edge source="衣服" target="小孩" id="117" weight="1.0" />
+      <edge source="衣服" target="小叽" id="118" weight="1.0" />
+      <edge source="衣服" target="祭文" id="119" weight="2.0" />
+      <edge source="翅膀" target="眼睛" id="120" weight="1.0" />
+      <edge source="翅膀" target="表情" id="121" weight="2.0" />
+      <edge source="翅膀" target="兄弟" id="122" weight="1.0" />
+      <edge source="翅膀" target="人面" id="123" weight="1.0" />
+      <edge source="翅膀" target="样子" id="124" weight="1.0" />
+      <edge source="人间" target="人族" id="125" weight="1.0" />
+      <edge source="人间" target="春生" id="126" weight="1.0" />
+      <edge source="人间" target="尸骨" id="127" weight="1.0" />
+      <edge source="肉身" target="细节" id="128" weight="2.0" />
+      <edge source="肉身" target="标题" id="129" weight="3.0" />
+      <edge source="肉身" target="样子" id="130" weight="1.0" />
+      <edge source="故人" target="情敌" id="131" weight="1.0" />
+      <edge source="全剧" target="殉情" id="132" weight="7.0" />
+      <edge source="全剧" target="撒花" id="133" weight="2.0" />
+      <edge source="全剧" target="主角" id="134" weight="11.0" />
+      <edge source="全剧" target="狗头" id="135" weight="1.0" />
+      <edge source="记忆" target="戒指" id="136" weight="3.0" />
+      <edge source="记忆" target="父亲" id="137" weight="1.0" />
+      <edge source="记忆" target="动作" id="138" weight="1.0" />
+      <edge source="记忆" target="云烟" id="139" weight="17.0" />
+      <edge source="表情" target="细节" id="140" weight="1.0" />
+      <edge source="表情" target="婆婆" id="141" weight="1.0" />
+      <edge source="表情" target="重点" id="142" weight="1.0" />
+      <edge source="表情" target="面具" id="143" weight="4.0" />
+      <edge source="表情" target="角度" id="144" weight="1.0" />
+      <edge source="人家" target="头发" id="145" weight="1.0" />
+      <edge source="人家" target="眼睛" id="146" weight="1.0" />
+      <edge source="人家" target="妖族" id="147" weight="1.0" />
+      <edge source="人家" target="兄弟" id="148" weight="1.0" />
+      <edge source="人家" target="人心" id="149" weight="1.0" />
+      <edge source="人家" target="狗头" id="150" weight="1.0" />
+      <edge source="人家" target="无辜" id="151" weight="1.0" />
+      <edge source="人家" target="复活" id="152" weight="1.0" />
+      <edge source="人家" target="干嘛" id="153" weight="3.0" />
+      <edge source="眼神" target="鸡仔" id="154" weight="1.0" />
+      <edge source="眼神" target="众生" id="155" weight="1.0" />
+      <edge source="特能" target="人族" id="156" weight="1.0" />
+      <edge source="特能" target="医院" id="157" weight="1.0" />
+      <edge source="特能" target="大姐" id="158" weight="1.0" />
+      <edge source="特能" target="官方" id="159" weight="1.0" />
+      <edge source="特能" target="洗脑" id="160" weight="1.0" />
+      <edge source="特能" target="博士" id="161" weight="1.0" />
+      <edge source="特能" target="中心" id="162" weight="1.0" />
+      <edge source="特能" target="普通人" id="163" weight="2.0" />
+      <edge source="特能" target="精神" id="164" weight="1.0" />
+      <edge source="场面" target="老头" id="165" weight="1.0" />
+      <edge source="场面" target="怕鬼" id="166" weight="1.0" />
+      <edge source="场面" target="情敌" id="167" weight="1.0" />
+      <edge source="场面" target="骨头" id="168" weight="1.0" />
+      <edge source="场面" target="配乐" id="169" weight="1.0" />
+      <edge source="魔头" target="春生" id="170" weight="2.0" />
+      <edge source="魔头" target="骨头" id="171" weight="1.0" />
+      <edge source="魔头" target="诈尸" id="172" weight="10.0" />
+      <edge source="父亲" target="人族" id="173" weight="3.0" />
+      <edge source="父亲" target="妖族" id="174" weight="3.0" />
+      <edge source="父亲" target="傀儡" id="175" weight="3.0" />
+      <edge source="父亲" target="原文" id="176" weight="2.0" />
+      <edge source="父亲" target="亲人" id="177" weight="1.0" />
+      <edge source="父亲" target="设计" id="178" weight="1.0" />
+      <edge source="怕鬼" target="鸡仔" id="179" weight="1.0" />
+      <edge source="动作" target="鸡崽" id="180" weight="1.0" />
+      <edge source="动作" target="伏笔" id="181" weight="1.0" />
+      <edge source="动作" target="语气" id="182" weight="1.0" />
+      <edge source="动作" target="硬币" id="183" weight="1.0" />
+      <edge source="狗头" target="锦鲤" id="184" weight="1.0" />
+      <edge source="狗头" target="终身大事" id="185" weight="1.0" />
+      <edge source="狗头" target="原文" id="186" weight="1.0" />
+      <edge source="视角" target="制作组" id="187" weight="1.0" />
+      <edge source="视角" target="厕所" id="188" weight="1.0" />
+      <edge source="视角" target="重点" id="189" weight="1.0" />
+      <edge source="视角" target="伏笔" id="190" weight="1.0" />
+      <edge source="视角" target="马桶" id="191" weight="2.0" />
+      <edge source="视角" target="霸气" id="192" weight="1.0" />
+      <edge source="视角" target="小鸟" id="193" weight="1.0" />
+      <edge source="身体" target="镜花水月" id="194" weight="1.0" />
+      <edge source="身体" target="好歹" id="195" weight="1.0" />
+      <edge source="身体" target="小叽" id="196" weight="1.0" />
+      <edge source="镜头" target="天地" id="197" weight="2.0" />
+      <edge source="故事" target="救命" id="198" weight="1.0" />
+      <edge source="故事" target="大刀" id="199" weight="1.0" />
+      <edge source="故事" target="片尾曲" id="200" weight="1.0" />
+      <edge source="故事" target="名字" id="201" weight="1.0" />
+      <edge source="工作" target="家人" id="202" weight="1.0" />
+      <edge source="工作" target="能力" id="203" weight="1.0" />
+      <edge source="工作" target="洗脑" id="204" weight="1.0" />
+      <edge source="工作" target="外勤" id="205" weight="1.0" />
+      <edge source="工作" target="人类" id="206" weight="1.0" />
+      <edge source="工作" target="复活" id="207" weight="1.0" />
+      <edge source="工作" target="角度" id="208" weight="1.0" />
+      <edge source="飞机" target="样子" id="209" weight="1.0" />
+      <edge source="崽子" target="礼貌" id="210" weight="1.0" />
+      <edge source="崽子" target="角度" id="211" weight="1.0" />
+      <edge source="专业" target="转场" id="212" weight="1.0" />
+      <edge source="专业" target="博士" id="213" weight="1.0" />
+      <edge source="名字" target="人族" id="214" weight="1.0" />
+      <edge source="名字" target="镜花水月" id="215" weight="2.0" />
+      <edge source="名字" target="人面" id="216" weight="1.0" />
+      <edge source="骨头" target="干嘛" id="217" weight="1.0" />
+      <edge source="朋友" target="人类" id="218" weight="1.0" />
+      <edge source="朋友" target="世纪" id="219" weight="2.0" />
+      <edge source="人族" target="手熟" id="220" weight="1.0" />
+      <edge source="人族" target="老师" id="221" weight="1.0" />
+      <edge source="人族" target="礼貌" id="222" weight="1.0" />
+      <edge source="人族" target="格局" id="223" weight="1.0" />
+      <edge source="人族" target="族长" id="224" weight="2.0" />
+      <edge source="人族" target="妖族" id="225" weight="9.0" />
+      <edge source="人族" target="鸡崽" id="226" weight="1.0" />
+      <edge source="人族" target="傀儡" id="227" weight="1.0" />
+      <edge source="人族" target="大刀" id="228" weight="1.0" />
+      <edge source="人族" target="人面" id="229" weight="1.0" />
+      <edge source="人族" target="族人" id="230" weight="3.0" />
+      <edge source="人族" target="巫族" id="231" weight="6.0" />
+      <edge source="人族" target="无辜" id="232" weight="1.0" />
+      <edge source="人族" target="丹离" id="233" weight="2.0" />
+      <edge source="人族" target="设计" id="234" weight="3.0" />
+      <edge source="人族" target="天地" id="235" weight="1.0" />
+      <edge source="人族" target="责任" id="236" weight="1.0" />
+      <edge source="人族" target="少女" id="237" weight="4.0" />
+      <edge source="人族" target="思念" id="238" weight="1.0" />
+      <edge source="人族" target="干嘛" id="239" weight="1.0" />
+      <edge source="人们" target="暖气" id="240" weight="1.0" />
+      <edge source="人们" target="家暴" id="241" weight="2.0" />
+      <edge source="人们" target="投币" id="242" weight="1.0" />
+      <edge source="人们" target="高能" id="243" weight="1.0" />
+      <edge source="人们" target="心梗" id="244" weight="1.0" />
+      <edge source="人们" target="族人" id="245" weight="1.0" />
+      <edge source="人们" target="马桶" id="246" weight="2.0" />
+      <edge source="梨花" target="小叽" id="247" weight="1.0" />
+      <edge source="地方" target="制作组" id="248" weight="1.0" />
+      <edge source="地方" target="设计" id="249" weight="1.0" />
+      <edge source="地方" target="精彩" id="250" weight="1.0" />
+      <edge source="语气" target="妈呀" id="251" weight="1.0" />
+      <edge source="语气" target="前辈" id="252" weight="1.0" />
+      <edge source="族人" target="镜花水月" id="253" weight="1.0" />
+      <edge source="族人" target="妖族" id="254" weight="2.0" />
+      <edge source="族人" target="傀儡" id="255" weight="1.0" />
+      <edge source="族人" target="大刀" id="256" weight="1.0" />
+      <edge source="族人" target="亲人" id="257" weight="1.0" />
+      <edge source="族人" target="无辜" id="258" weight="1.0" />
+      <edge source="族人" target="丹离" id="259" weight="1.0" />
+      <edge source="族人" target="入魔" id="260" weight="1.0" />
+      <edge source="族人" target="少女" id="261" weight="1.0" />
+      <edge source="族人" target="火烧" id="262" weight="2.0" />
+      <edge source="族人" target="泪目" id="263" weight="1.0" />
+      <edge source="亲人" target="人面" id="264" weight="1.0" />
+      <edge source="亲人" target="弟弟" id="265" weight="2.0" />
+      <edge source="亲人" target="无辜" id="266" weight="1.0" />
+      <edge source="亲人" target="复活" id="267" weight="1.0" />
+      <edge source="手熟" target="精准" id="268" weight="1.0" />
+      <edge source="精准" target="大姐" id="269" weight="3.0" />
+      <edge source="精准" target="离谱" id="270" weight="1.0" />
+      <edge source="老师" target="口音" id="271" weight="1.0" />
+      <edge source="老师" target="老头" id="272" weight="1.0" />
+      <edge source="老师" target="巫族" id="273" weight="1.0" />
+      <edge source="老师" target="设计" id="274" weight="1.0" />
+      <edge source="礼貌" target="头发" id="275" weight="1.0" />
+      <edge source="礼貌" target="秋裤" id="276" weight="1.0" />
+      <edge source="礼貌" target="医院" id="277" weight="4.0" />
+      <edge source="礼貌" target="普通人" id="278" weight="1.0" />
+      <edge source="格局" target="终身大事" id="279" weight="2.0" />
+      <edge source="格局" target="大姐" id="280" weight="1.0" />
+      <edge source="格局" target="丹离" id="281" weight="1.0" />
+      <edge source="族长" target="妖族" id="282" weight="1.0" />
+      <edge source="族长" target="刀子" id="283" weight="1.0" />
+      <edge source="族长" target="巫族" id="284" weight="2.0" />
+      <edge source="族长" target="设计" id="285" weight="2.0" />
+      <edge source="族长" target="太刀" id="286" weight="1.0" />
+      <edge source="族长" target="入魔" id="287" weight="1.0" />
+      <edge source="族长" target="责任" id="288" weight="1.0" />
+      <edge source="族长" target="时间" id="289" weight="1.0" />
+      <edge source="妖族" target="婆婆" id="290" weight="1.0" />
+      <edge source="妖族" target="灵渊" id="291" weight="1.0" />
+      <edge source="妖族" target="民族" id="292" weight="5.0" />
+      <edge source="妖族" target="巫族" id="293" weight="4.0" />
+      <edge source="妖族" target="设计" id="294" weight="1.0" />
+      <edge source="妖族" target="出场" id="295" weight="1.0" />
+      <edge source="妖族" target="少女" id="296" weight="1.0" />
+      <edge source="妖族" target="人类" id="297" weight="1.0" />
+      <edge source="妖族" target="干嘛" id="298" weight="1.0" />
+      <edge source="鸡崽" target="我会" id="299" weight="1.0" />
+      <edge source="鸡崽" target="硬币" id="300" weight="1.0" />
+      <edge source="傀儡" target="重点" id="301" weight="1.0" />
+      <edge source="傀儡" target="丹离" id="302" weight="3.0" />
+      <edge source="傀儡" target="设计" id="303" weight="1.0" />
+      <edge source="傀儡" target="出场" id="304" weight="1.0" />
+      <edge source="大刀" target="救命" id="305" weight="1.0" />
+      <edge source="大刀" target="对方" id="306" weight="1.0" />
+      <edge source="人面" target="出场" id="307" weight="1.0" />
+      <edge source="巫族" target="设计" id="308" weight="2.0" />
+      <edge source="丹离" target="设计" id="309" weight="4.0" />
+      <edge source="丹离" target="干嘛" id="310" weight="1.0" />
+      <edge source="设计" target="制作组" id="311" weight="1.0" />
+      <edge source="设计" target="婆婆" id="312" weight="1.0" />
+      <edge source="设计" target="责任" id="313" weight="1.0" />
+      <edge source="设计" target="配乐" id="314" weight="1.0" />
+      <edge source="设计" target="时间" id="315" weight="1.0" />
+      <edge source="责任" target="大姐" id="316" weight="1.0" />
+      <edge source="责任" target="能力" id="317" weight="14.0" />
+      <edge source="责任" target="外勤" id="318" weight="1.0" />
+      <edge source="责任" target="时间" id="319" weight="1.0" />
+      <edge source="少女" target="细节" id="320" weight="1.0" />
+      <edge source="少女" target="主角" id="321" weight="1.0" />
+      <edge source="思念" target="乾坤" id="322" weight="9.0" />
+      <edge source="干嘛" target="人心" id="323" weight="1.0" />
+      <edge source="救命" target="头发" id="324" weight="1.0" />
+      <edge source="救命" target="太帅" id="325" weight="3.0" />
+      <edge source="救命" target="姐姐" id="326" weight="1.0" />
+      <edge source="救命" target="过分" id="327" weight="1.0" />
+      <edge source="救命" target="婆婆" id="328" weight="1.0" />
+      <edge source="救命" target="秋裤" id="329" weight="1.0" />
+      <edge source="救命" target="洗脑" id="330" weight="2.0" />
+      <edge source="救命" target="新冠" id="331" weight="1.0" />
+      <edge source="救命" target="片尾曲" id="332" weight="1.0" />
+      <edge source="头发" target="制作组" id="333" weight="1.0" />
+      <edge source="头发" target="太帅" id="334" weight="1.0" />
+      <edge source="头发" target="科学" id="335" weight="1.0" />
+      <edge source="头发" target="条形码" id="336" weight="3.0" />
+      <edge source="头发" target="剧组" id="337" weight="1.0" />
+      <edge source="姐姐" target="太帅" id="338" weight="2.0" />
+      <edge source="姐姐" target="出场" id="339" weight="1.0" />
+      <edge source="灵渊" target="乾坤" id="340" weight="1.0" />
+      <edge source="硬币" target="手机" id="341" weight="4.0" />
+      <edge source="前辈" target="鸡仔" id="342" weight="1.0" />
+      <edge source="角度" target="家人" id="343" weight="1.0" />
+      <edge source="角度" target="能力" id="344" weight="1.0" />
+      <edge source="角度" target="复活" id="345" weight="1.0" />
+      <edge source="细节" target="制作组" id="346" weight="1.0" />
+      <edge source="细节" target="婆婆" id="347" weight="1.0" />
+      <edge source="细节" target="戒指" id="348" weight="2.0" />
+      <edge source="细节" target="重点" id="349" weight="1.0" />
+      <edge source="细节" target="兄弟" id="350" weight="1.0" />
+      <edge source="细节" target="面具" id="351" weight="1.0" />
+      <edge source="细节" target="主角" id="352" weight="1.0" />
+      <edge source="细节" target="精彩" id="353" weight="1.0" />
+      <edge source="细节" target="时间" id="354" weight="1.0" />
+      <edge source="镜花水月" target="家人" id="355" weight="2.0" />
+      <edge source="镜花水月" target="复活" id="356" weight="1.0" />
+      <edge source="医院" target="事情" id="357" weight="1.0" />
+      <edge source="家人" target="大姐" id="358" weight="1.0" />
+      <edge source="家人" target="能力" id="359" weight="1.0" />
+      <edge source="家人" target="异能" id="360" weight="1.0" />
+      <edge source="家人" target="精神" id="361" weight="1.0" />
+      <edge source="家人" target="复活" id="362" weight="1.0" />
+      <edge source="兄弟" target="春生" id="363" weight="1.0" />
+      <edge source="兄弟" target="投币" id="364" weight="1.0" />
+      <edge source="兄弟" target="面具" id="365" weight="1.0" />
+      <edge source="兄弟" target="新冠" id="366" weight="1.0" />
+      <edge source="祭品" target="重点" id="367" weight="1.0" />
+      <edge source="祭品" target="原文" id="368" weight="1.0" />
+      <edge source="祭品" target="样子" id="369" weight="1.0" />
+      <edge source="祭品" target="祭文" id="370" weight="1.0" />
+      <edge source="原文" target="春生" id="371" weight="1.0" />
+      <edge source="原文" target="时间" id="372" weight="1.0" />
+      <edge source="中心" target="官方" id="373" weight="2.0" />
+      <edge source="中心" target="人心" id="374" weight="1.0" />
+      <edge source="中心" target="异能" id="375" weight="1.0" />
+      <edge source="复活" target="能力" id="376" weight="1.0" />
+      <edge source="复活" target="入魔" id="377" weight="1.0" />
+      <edge source="时间" target="春生" id="378" weight="1.0" />
+      <edge source="时间" target="主角" id="379" weight="1.0" />
+      <edge source="暖气" target="重点" id="380" weight="2.0" />
+      <edge source="重点" target="春生" id="381" weight="1.0" />
+      <edge source="重点" target="婆婆" id="382" weight="1.0" />
+      <edge source="重点" target="伏笔" id="383" weight="1.0" />
+      <edge source="重点" target="史书" id="384" weight="3.0" />
+      <edge source="重点" target="家属" id="385" weight="2.0" />
+      <edge source="重点" target="出场" id="386" weight="1.0" />
+      <edge source="心脏" target="六欲" id="387" weight="1.0" />
+      <edge source="六欲" target="人心" id="388" weight="18.0" />
+      <edge source="六欲" target="魔通" id="389" weight="22.0" />
+      <edge source="口音" target="老头" id="390" weight="3.0" />
+      <edge source="口音" target="妈呀" id="391" weight="1.0" />
+      <edge source="老头" target="博士" id="392" weight="1.0" />
+      <edge source="老头" target="精神" id="393" weight="1.0" />
+      <edge source="妈呀" target="太帅" id="394" weight="1.0" />
+      <edge source="妈呀" target="问候" id="395" weight="1.0" />
+      <edge source="大姐" target="眼睛" id="396" weight="1.0" />
+      <edge source="大姐" target="春生" id="397" weight="2.0" />
+      <edge source="大姐" target="外勤" id="398" weight="1.0" />
+      <edge source="大姐" target="异能" id="399" weight="1.0" />
+      <edge source="大姐" target="精神" id="400" weight="1.0" />
+      <edge source="太帅" target="眼睛" id="401" weight="1.0" />
+      <edge source="太帅" target="鸡仔" id="402" weight="1.0" />
+      <edge source="过分" target="标题" id="403" weight="4.0" />
+      <edge source="过分" target="精彩" id="404" weight="1.0" />
+      <edge source="婆婆" target="戒指" id="405" weight="1.0" />
+      <edge source="婆婆" target="样子" id="406" weight="1.0" />
+      <edge source="秋裤" target="泪目" id="407" weight="1.0" />
+      <edge source="秋裤" target="剧组" id="408" weight="2.0" />
+      <edge source="洗脑" target="现场" id="409" weight="3.0" />
+      <edge source="洗脑" target="异能" id="410" weight="1.0" />
+      <edge source="片尾曲" target="音乐" id="411" weight="1.0" />
+      <edge source="家暴" target="现场" id="412" weight="64.0" />
+      <edge source="家暴" target="戒指" id="413" weight="2.0" />
+      <edge source="现场" target="空手" id="414" weight="1.0" />
+      <edge source="现场" target="科学" id="415" weight="1.0" />
+      <edge source="现场" target="寡妇村" id="416" weight="1.0" />
+      <edge source="现场" target="精分" id="417" weight="12.0" />
+      <edge source="弟弟" target="情敌" id="418" weight="2.0" />
+      <edge source="锦鲤" target="光头" id="419" weight="1.0" />
+      <edge source="光头" target="样子" id="420" weight="2.0" />
+      <edge source="制作组" target="精彩" id="421" weight="3.0" />
+      <edge source="寡妇村" target="油翁" id="422" weight="1.0" />
+      <edge source="祭文" target="普通人" id="423" weight="1.0" />
+      <edge source="祭文" target="异能" id="424" weight="1.0" />
+      <edge source="眼睛" target="我会" id="425" weight="41.0" />
+      <edge source="眼睛" target="尸骨" id="426" weight="35.0" />
+      <edge source="眼睛" target="主角" id="427" weight="1.0" />
+      <edge source="鸡仔" target="手机" id="428" weight="1.0" />
+      <edge source="鸡仔" target="入魔" id="429" weight="1.0" />
+      <edge source="出场" target="主角" id="430" weight="1.0" />
+      <edge source="殉情" target="撒花" id="431" weight="4.0" />
+      <edge source="殉情" target="主角" id="432" weight="2.0" />
+      <edge source="撒花" target="主角" id="433" weight="3.0" />
+      <edge source="主角" target="事情" id="434" weight="1.0" />
+      <edge source="样子" target="历史" id="435" weight="2.0" />
+      <edge source="我会" target="尸骨" id="436" weight="35.0" />
+      <edge source="图片" target="历史" id="437" weight="3.0" />
+      <edge source="图片" target="实物" id="438" weight="29.0" />
+      <edge source="图片" target="史书" id="439" weight="1.0" />
+      <edge source="历史" target="能力" id="440" weight="1.0" />
+      <edge source="历史" target="史书" id="441" weight="1.0" />
+      <edge source="历史" target="异能" id="442" weight="2.0" />
+      <edge source="历史" target="传闻" id="443" weight="1.0" />
+      <edge source="春生" target="能力" id="444" weight="1.0" />
+      <edge source="春生" target="外勤" id="445" weight="1.0" />
+      <edge source="春生" target="异能" id="446" weight="3.0" />
+      <edge source="春生" target="精神" id="447" weight="2.0" />
+      <edge source="能力" target="普通人" id="448" weight="2.0" />
+      <edge source="能力" target="异能" id="449" weight="1.0" />
+      <edge source="外勤" target="普通人" id="450" weight="2.0" />
+      <edge source="外勤" target="精神" id="451" weight="1.0" />
+      <edge source="异能" target="官方" id="452" weight="1.0" />
+      <edge source="异能" target="普通人" id="453" weight="3.0" />
+      <edge source="异能" target="精神" id="454" weight="3.0" />
+      <edge source="异能" target="人类" id="455" weight="1.0" />
+      <edge source="刀子" target="烈火" id="456" weight="2.0" />
+      <edge source="入魔" target="火烧" id="457" weight="1.0" />
+      <edge source="泪目" target="高能" id="458" weight="1.0" />
+      <edge source="马桶" target="霸气" id="459" weight="2.0" />
+      <edge source="传闻" target="脚步声" id="460" weight="17.0" />
+      <edge source="人心" target="魔通" id="461" weight="18.0" />
+      <edge source="哔哩" target="电视" id="462" weight="2.0" />
+    </edges>
+  </graph>
+</gexf>

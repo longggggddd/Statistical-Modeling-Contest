@@ -7,7 +7,7 @@ from pytorch_tabnet.tab_model import TabNetRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import seaborn as sns
-from def_fun import plot_history_loss, plot_history_mae_mse
+from utils import plot_history_loss, plot_history_mae_mse
 import shap
 
 plt.rcParams['font.sans-serif'] = ['SimHei']

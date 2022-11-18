@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import tqdm
-from def_fun import kfold_stats_feature, mean_score
+from utils import kfold_stats_feature, mean_score
 
 data = pd.read_csv('data/original_data.csv', encoding='ANSI')
 pd.set_option('display.max_columns', None)

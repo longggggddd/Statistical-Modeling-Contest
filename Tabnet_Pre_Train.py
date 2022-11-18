@@ -8,11 +8,16 @@ from pytorch_tabnet.pretraining import TabNetPretrainer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import seaborn as sns
-from def_fun import plot_history_loss, plot_history_mae_mse
+from utils import plot_history_loss, plot_history_mae_mse
 import shap
 from yellowbrick.model_selection import FeatureImportances
 from yellowbrick.regressor import ResidualsPlot
 import plotly.io as pio
+
+
+def sesuper():
+    return r2, clf.history['loss']
+
 
 pio.renderers.default = 'browser'
 
@@ -20,7 +25,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 np.random.seed(10)
 
-data = pd.read_excel('data/bistandard+soft_fill.xlsx')
+data = pd.read_excel('data/bistandard-softfill.xlsx')
 data_x = data.iloc[:, :-1]
 feat_importance = data_x.columns
 data_y = data.iloc[:, -1]  # ！！！
@@ -143,7 +148,3 @@ plot_data = plot_data.set_index(keys='feat_name', drop=True)
 plot_data.plot(kind='bar')
 plt.savefig('picture/pre-importance.png')
 plt.show()
-
-
-def sesuper():
-    return r2, clf.history['loss']

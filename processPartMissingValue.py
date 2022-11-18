@@ -30,4 +30,4 @@ mid = BiScaler().fit_transform(data1)
 x_SOFT = inputer4.fit_transform(mid)
 data_SOFT = pd.DataFrame(x_SOFT, columns=data.columns)
 data_SOFT.to_excel('data/SOFT填充.xlsx')
-print(1)
+

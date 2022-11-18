@@ -10,6 +10,11 @@ from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import seaborn as sns
 from def_fun import plot_history_loss, plot_history_mae_mse
 import shap
+from yellowbrick.model_selection import FeatureImportances
+from yellowbrick.regressor import ResidualsPlot
+import plotly.io as pio
+
+pio.renderers.default = 'browser'
 
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False

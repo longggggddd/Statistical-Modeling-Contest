@@ -134,5 +134,5 @@ def main(address='tianjin', page=10):
 
 if __name__ == '__main__':
     ADDRESS = 'hengshui'  # 城市拼音
-    PAGE = 10  # PAGE 最多是10页 每页30个民宿 所以一个城市最多能爬取300个民宿信息
+    PAGE = 1  # PAGE 最多是10页 每页30个民宿 所以一个城市最多能爬取300个民宿信息
     main(address=ADDRESS, page=PAGE)
